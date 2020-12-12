@@ -10,6 +10,12 @@ pantry_resource.py, recipe.py, token.py, users.py
 /schemas/
 pantryschema.py, recipeschema.py, userschema.py
 
+/static/images/assets/
+default-avatar.jpg
+
+/static/images/avatars
+user uploaded avatars go here
+
 /templates/email/
 confirmation.html
 
