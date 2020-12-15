@@ -19,7 +19,6 @@ from schemas.userschema import UserSchema
 from schemas.recipeschema import RecipeSchema
 from schemas.pantryschema import PantrySchema
 
-
 recipe_list_schema = RecipeSchema(many=True)
 pantry_list_schema = PantrySchema(many=True)
 
@@ -31,7 +30,7 @@ mailgun = MailgunApi(domain=os.environ.get('MAILGUN_DOMAIN'),
 user_schema = UserSchema()
 user_public_schema = UserSchema(exclude=('email',))
 
-user_avatar_schema = UserSchema(only=('avatar_url', ))
+user_avatar_schema = UserSchema(only=('avatar_url',))
 
 
 class UserListResource(Resource):

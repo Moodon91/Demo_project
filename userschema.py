@@ -3,6 +3,7 @@ from flask import url_for
 
 from utils import hash_password
 
+
 # Defines the attributes that are received in the client request
 
 
@@ -21,7 +22,6 @@ class UserSchema(Schema):
 
     def load_password(self, value):
         return hash_password(value)
-
 
     def dump_avatar_url(self, user):
         if user.avatar_image:

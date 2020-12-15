@@ -14,6 +14,7 @@ from models.user import User
 
 black_list = set()
 
+
 # When a user logs in, post method will be invoked and it will take
 # the email and password from the client JSON request
 
