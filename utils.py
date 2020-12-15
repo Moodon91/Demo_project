@@ -10,6 +10,7 @@ import os
 
 from PIL import Image
 
+
 # Function for hashing the password
 
 
@@ -41,7 +42,6 @@ def verify_token(token, max_age=(30 * 60), salt=None):
 
 
 def compress_image(filename, folder):
-
     file_path = image_set.path(filename=filename, folder=folder)
 
     image = Image.open(file_path)
